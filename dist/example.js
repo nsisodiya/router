@@ -7,7 +7,7 @@
 		exports["example"] = factory(require("@nsisodiya/router"));
 	else
 		root["example"] = factory(root["ReactRouter"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {
+})(this, function (__WEBPACK_EXTERNAL_MODULE_9__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -50,27 +50,37 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/({
+
+	/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+		"use strict";
 
-	var _router = __webpack_require__(1);
+		var _router = __webpack_require__(9);
 
 	var _router2 = _interopRequireDefault(_router);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _router2.default)();
+		console.log(_router.PageHolder.isHolded());
+		_router.PageHolder.hold("You cannot navigate from this page");
+		console.log(_router.PageHolder.isHolded());
+		_router.PageHolder.unHold();
+		console.log(_router.PageHolder.isHolded());
+
+		console.log(_router2.default);
 
 /***/ },
-/* 1 */
+
+	/***/ 9:
 /***/ function(module, exports) {
 
-	module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
+		module.exports = __WEBPACK_EXTERNAL_MODULE_9__;
 
 /***/ }
-/******/ ])
+
+	/******/
+})
 });
 ;
