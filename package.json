@@ -1,6 +1,6 @@
 {
 	"name": "@nsisodiya/router",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Simple React Router",
 	"main": "dist/ReactRouter.js",
 	"scripts": {
@@ -9,6 +9,9 @@
 		"server": "cd dist ; live-server",
 		"build": "npm run watch ; npm run server"
 	},
+	"files": [
+		"dist"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/nsisodiya/router.git"
@@ -24,8 +27,8 @@
 	},
 	"homepage": "https://github.com/nsisodiya/router#readme",
 	"peerDependencies": {
-		"react": "^0.14.0",
-		"react-dom": "^0.14.0"
+		"react": ">=0.14.0",
+		"react-dom": ">=0.14.0"
 	},
 	"devDependencies": {
 		"babel-core": "6.7.2",
