@@ -21,7 +21,7 @@ class Link extends Component {
 			PageHolder.unHold();
 			//Send RouteChange Signal to everywhere
 			routeEventBus.publish("ROUTE_CHANGE_REQUESTED", {
-				path: synthEvt.target.getAttribute("href")
+				path: synthEvt.currentTarget.getAttribute("href")
 			});
 		} else {
 			//Do nothing, If False !!
