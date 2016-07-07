@@ -5,7 +5,7 @@
 
 import PathParser from 'pathparser';
 import routeEventBus from './routeEventBus';
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 var simplePathParser = new PathParser();
 

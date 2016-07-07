@@ -3,7 +3,7 @@
  */
 
 
-import { Component } from 'react';
+import React, { Component } from 'react';
 import PageHolder from './PageHolder';
 import routeEventBus from './routeEventBus';
 

@@ -151,6 +151,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react = __webpack_require__(3);
 
+	var _react2 = _interopRequireDefault(_react);
+
 	var _PageHolder = __webpack_require__(1);
 
 	var _PageHolder2 = _interopRequireDefault(_PageHolder);
@@ -199,7 +201,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		}, {
 			key: 'render',
 			value: function render() {
-				return React.createElement(
+				return _react2.default.createElement(
 					'a',
 					_extends({ onClick: this.linkClicked.bind(this) }, this.props),
 					this.props.children
@@ -439,6 +441,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react = __webpack_require__(3);
 
+	var _react2 = _interopRequireDefault(_react);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -519,13 +523,13 @@ return /******/ (function(modules) { // webpackBootstrap
 			value: function render() {
 				console.log("%c RouteLoader Component -> Render ", 'background: black; color: pink');
 				if (this.state.currentRoute === null) {
-					return React.createElement('div', null);
+					return _react2.default.createElement('div', null);
 				}
 				var C = this.props.config.routes[this.state.currentRoute];
-				return React.createElement(
+				return _react2.default.createElement(
 					'div',
 					{ styleName: 'container' },
-					React.createElement(C, this.state.args)
+					_react2.default.createElement(C, this.state.args)
 				);
 			}
 		}]);
