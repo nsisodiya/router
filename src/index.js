@@ -26,12 +26,6 @@ addEvent(window, 'popstate', function (event) {
 	}
 });
 
-setTimeout(function () {
-	routeEventBus.publish("ROUTE_CHANGE_REQUESTED", {
-		path: window.location.pathname
-	});
-}, 0);
-
 module.exports = {
 	PageHolder,
 	Link,

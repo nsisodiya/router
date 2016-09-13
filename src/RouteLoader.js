@@ -60,6 +60,14 @@ class RouteLoader extends Component {
 		});
 	}
 
+  componentDidMount() {
+    setTimeout(function () {
+      routeEventBus.publish("ROUTE_CHANGE_REQUESTED", {
+        path: window.location.pathname
+      });
+    }, 0);
+  }
+
 	componentWillUnmount() {
 		this.unsub1();
 		this.unsub2();

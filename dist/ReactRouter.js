@@ -97,12 +97,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    
 	     */
 
-	setTimeout(function () {
-		_routeEventBus2.default.publish("ROUTE_CHANGE_REQUESTED", {
-			path: window.location.pathname
-		});
-	}, 0);
-
 	module.exports = {
 		PageHolder: _PageHolder2.default,
 		Link: _Link2.default,
@@ -512,6 +506,15 @@ return /******/ (function(modules) { // webpackBootstrap
 		}
 
 		_createClass(RouteLoader, [{
+			key: 'componentDidMount',
+			value: function componentDidMount() {
+				setTimeout(function () {
+					_routeEventBus2.default.publish("ROUTE_CHANGE_REQUESTED", {
+						path: window.location.pathname
+					});
+				}, 0);
+			}
+		}, {
 			key: 'componentWillUnmount',
 			value: function componentWillUnmount() {
 				this.unsub1();
