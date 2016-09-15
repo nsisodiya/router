@@ -1,3 +1,5 @@
+#** DEPRECATED - USE REACT ROUTER v4 **
+
 # @nsisodiya/router
 Simple React Router
 
